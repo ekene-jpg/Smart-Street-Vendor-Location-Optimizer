@@ -96,7 +96,7 @@ function run() {
       const vendorCount = 1 + Math.floor(Math.random() * 3);
       for (let i = 0; i < vendorCount; i++) {
         const type = vendorTypes[Math.floor(Math.random() * vendorTypes.length)];
-        insertVendor.run(locationId, type, type, 'active');
+       insertVendor.run(locationId, type, type);
       }
     }
   });
